@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Searchable Option List Example</title>
+    <!-- Searchable option list require lib  -->
+    <link rel="stylesheet" href="sol.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="sol.js"></script>
+</head>
+
+<body>
+    <select id="character" name="character" multiple="multiple">
+        <option value="Peter">Peter Griffin</option>
+        <option value="Lois">Lois Griffin</option>
+        <option value="Chris">Chris Griffin</option>
+        <option value="Meg">Meg Griffin</option>
+        <option value="Stewie">Stewie Griffin</option>
+        <option value="Cleveland">Cleveland Brown</option>
+        <option value="Joe">Joe Swanson</option>
+        <option value="Quagmire">Glenn Quagmire</option>
+        <option value="Evil Monkey">Evil Monkey</option>
+        <option value="Herbert">John Herbert</option>
+        <option value="Adam">Adam West</option>
+        <option value="Buzz Killington">Buzz Killington</option>
+        <option value="Tricia">Tricia Takanawa</option>
+        <option value="Tom">Tom Tucker</option>
+        <option value="Jake">Jake Tucker</option>
+        <option value="Diane">Diane Simmons</option>
+        <option value="Ollie">Ollie Williams</option>
+        <option value="Dr Hartmann">Dr. Elmer Hartmann</option>
+        <option value="Barbara">Barbara Pewterschmidt</option>
+        <option value="Carter">Carter Pewterschmidt</option>
+        <option value="Neil">Neil Goldmann</option>
+        <option value="Mort">Mort Goldmann</option>
+        <option value="Muriel">Muriel Goldmann</option>
+        <option value="Consuela">Consuela</option>
+        <option value="Jillian">Jillian Russel</option>
+        <option value="Phineas and Barnaby">Phineas and Barnaby</option>
+        <option value="Vern and Johnny">Vern and Johnny</option>
+        <option value="Ernie">Ernie The Giant Chicken</option>
+        <option value="Bruce">Bruce</option>
+        <option value="Jeffrey">Jeffrey</option>
+        <option value="Carl">Carl</option>
+    </select>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#character').searchableOptionList({
+                showSelectAll: true,
+                maxHeight: '250px'
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -989,6 +989,8 @@
         selectAll: function () {
             if (this.config.multiple) {
                 var $changedInputs = this.$selectionContainer
+                    .find('.sol-option')
+                    .not('.sol-filtered-search')
                     .find('input[type="checkbox"]:not([disabled], :checked)')
                     .prop('checked', true)
                     .trigger('change', true);
@@ -1022,6 +1024,8 @@
         deselectAll: function () {
             if (this.config.multiple) {
                 var $changedInputs = this.$selectionContainer
+                    .find('.sol-option')
+                    .not('.sol-filtered-search')
                     .find('input[type="checkbox"]:not([disabled]):checked')
                     .prop('checked', false)
                     .trigger('change', true);
